@@ -92,15 +92,22 @@ echo
 
 
 sudo apt-get -y install \
-git cmake g++ pkg-config autoconf automake libtool libfftw3-dev libusb-1.0-0-dev libusb-dev libhidapi-dev \
+git cmake g++ pkg-config autoconf automake libtool libfftw3-dev libusb-1.0-0-dev libusb-dev libhidapi-dev libopengl-dev \
 qtbase5-dev qtchooser libqt5multimedia5-plugins qtmultimedia5-dev libqt5websockets5-dev \
 qttools5-dev qttools5-dev-tools libqt5opengl5-dev libqt5quick5 libqt5charts5-dev \
 qml-module-qtlocation  qml-module-qtpositioning qml-module-qtquick-window2 \
 qml-module-qtquick-dialogs qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-layouts \
 libqt5serialport5-dev qtdeclarative5-dev qtpositioning5-dev qtlocation5-dev libqt5texttospeech5-dev \
-qtwebengine5-dev qtbase5-private-dev \
+qtwebengine5-dev qtbase5-private-dev libqt5gamepad5-dev \
 libfaad-dev zlib1g-dev libboost-all-dev libasound2-dev pulseaudio libopencv-dev libxml2-dev bison flex \
 ffmpeg libavcodec-dev libavformat-dev libopus-dev doxygen graphviz
+sudo apt-get update && sudo apt-get -y install \
+qt6-base-dev qt6-base-private-dev qt6-scxml-dev \
+qt6-multimedia-dev qt6-positioning-dev qt6-location-dev qt6-websockets-dev qt6-webengine-dev \
+qt6-serialport-dev qt6-speech-dev qt6-charts-dev qt6-svg-dev qt6-declarative-dev \
+qtchooser qt6-tools-dev qt6-tools-dev-tools libqt6quick6 qt6-location-plugins \
+qml-module-qtlocation qml-module-qtpositioning qml-module-qtquick-window2 \
+qml-module-qtquick-dialogs qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-layouts
 
 
 CHECK_LAST_COMMAND
