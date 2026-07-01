@@ -582,7 +582,7 @@ sleep 0.5
 cd $BUILD_DIR
 CHECK_LAST_COMMAND
 
-git clone https://github.com/f4exb/sdrangel.git
+git clone https://github.com/rdsantos18/sdrangel.git
 CHECK_LAST_COMMAND
 
 cd sdrangel
