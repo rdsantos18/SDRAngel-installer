@@ -103,9 +103,9 @@ libfaad-dev zlib1g-dev libboost-all-dev libasound2-dev pulseaudio libopencv-dev 
 ffmpeg libavcodec-dev libavformat-dev libopus-dev doxygen graphviz
 sudo apt-get update && sudo apt-get -y install \
 qt6-base-dev qt6-base-private-dev qt6-scxml-dev \
-qt6-multimedia-dev qt6-positioning-dev qt6-location-dev qt6-websockets-dev qt6-webengine-dev \
+qt6-multimedia-dev qt6-positioning-dev qt6-websockets-dev qt6-webengine-dev \
 qt6-serialport-dev qt6-speech-dev qt6-charts-dev qt6-svg-dev qt6-declarative-dev \
-qtchooser qt6-tools-dev qt6-tools-dev-tools libqt6quick6 qt6-location-plugins \
+qtchooser qt6-tools-dev qt6-tools-dev-tools libqt6quick6 \
 qml-module-qtlocation qml-module-qtpositioning qml-module-qtquick-window2 \
 qml-module-qtquick-dialogs qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-layouts
 
