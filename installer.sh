@@ -443,7 +443,7 @@ CHECK_LAST_COMMAND
 mkdir build; cd build
 CHECK_LAST_COMMAND
 
-cmake -DCMAKE_INSTALL_PREFIX=/opt/install/rnnoise -DRNN_ENABLE_X86_RTCD=ON ..
+cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/rnnoise -DRNN_ENABLE_X86_RTCD=ON ..
 CHECK_LAST_COMMAND
 
 make -j $(nproc) install
