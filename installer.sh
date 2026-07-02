@@ -427,27 +427,27 @@ make -j $(nproc) install
 CHECK_LAST_COMMAND
 
 
-#echo
-#CLEAR_AND_CONTINUE
-#INFO_PRINTER "Starting install: RNnoise"
-#
-#cd $BUILD_DIR
-#CHECK_LAST_COMMAND
-#
-#git clone https://github.com/f4exb/rnnoise
-#CHECK_LAST_COMMAND
-#
-#cd rnnoise
-#CHECK_LAST_COMMAND
-#
-#mkdir build; cd build
-#CHECK_LAST_COMMAND
-#
-#cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/rnnoise ..
-#CHECK_LAST_COMMAND
-#
-#make -j $(nproc) install
-#CHECK_LAST_COMMAND
+echo
+CLEAR_AND_CONTINUE
+INFO_PRINTER "Starting install: RNnoise"
+
+cd $BUILD_DIR
+CHECK_LAST_COMMAND
+
+git clone https://github.com/f4exb/rnnoise
+CHECK_LAST_COMMAND
+
+cd rnnoise
+CHECK_LAST_COMMAND
+
+mkdir build; cd build
+CHECK_LAST_COMMAND
+
+cmake -DCMAKE_INSTALL_PREFIX=/opt/install/rnnoise -DRNN_ENABLE_X86_RTCD=ON ..
+CHECK_LAST_COMMAND
+
+make -j $(nproc) install
+CHECK_LAST_COMMAND
 
 
 
@@ -596,27 +596,27 @@ CHECK_LAST_COMMAND
 
 
 
-#CLEAR_AND_CONTINUE
-#INFO_PRINTER "Starting install Pluto SDR"
-#
-#cd $BUILD_DIR
-#CHECK_LAST_COMMAND
-#
-#git clone https://github.com/analogdevicesinc/libiio.git
-#CHECK_LAST_COMMAND
-#
-#cd libiio
-#CHECK_LAST_COMMAND
-#
-#git reset --hard v0.26
-#CHECK_LAST_COMMAND
-#
-#mkdir build; cd build
-#CHECK_LAST_COMMAND
-#
-#cmake -Wno-dev -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/libiio -DINSTALL_UDEV_RULE=OFF ..
-#CHECK_LAST_COMMAND
-#
+CLEAR_AND_CONTINUE
+INFO_PRINTER "Starting install Pluto SDR"
+
+cd $BUILD_DIR
+CHECK_LAST_COMMAND
+
+git clone https://github.com/analogdevicesinc/libiio.git
+CHECK_LAST_COMMAND
+
+cd libiio
+CHECK_LAST_COMMAND
+
+git reset --hard v0.26
+CHECK_LAST_COMMAND
+
+mkdir build; cd build
+CHECK_LAST_COMMAND
+
+cmake -Wno-dev -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR/libiio -DINSTALL_UDEV_RULE=OFF ..
+CHECK_LAST_COMMAND
+
 #make -j $(nproc) install
 #CHECK_LAST_COMMAND
 
